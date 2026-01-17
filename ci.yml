@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y nasm qemu-system-x86 make
+
+      - name: Build CloudOS image
+        run: |
+          make
+          ls -R
+          test -f build/cloudos.img
+
+      - name: Smoke test in QEMU
+        run: |
+          make run-headless || make run
