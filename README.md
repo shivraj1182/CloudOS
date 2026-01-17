@@ -1,10 +1,10 @@
-# CloudOS 🚧
+# CloudOS 
 
 ![Under Development](https://img.shields.io/badge/status-under%20development-orange)
 ![Assembly](https://img.shields.io/badge/language-Assembly-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
 
-A minimal operating system kernel built from scratch - Under Active Development 🚧
+A minimal operating system kernel built from scratch - Under Active Development 
 
 ## Overview
 
@@ -12,12 +12,12 @@ CloudOS is a basic x86 operating system written in Assembly. This project is des
 
 ## Features (Current)
 
-- ✅ Custom bootloader (16-bit real mode)
-- ✅ Boot message display
-- ✅ BIOS interrupt handling
-- 🚧 Kernel initialization (in progress)
-- 🚧 VGA text mode driver (planned)
-- 🚧 Keyboard driver (planned)
+-  Custom bootloader (16-bit real mode)
+-  Boot message display
+-  BIOS interrupt handling
+-  Kernel initialization (in progress)
+-  VGA text mode driver (planned)
+-  Keyboard driver (planned)
 
 ## Project Structure
 
