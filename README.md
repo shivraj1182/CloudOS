@@ -16,7 +16,9 @@ CloudOS is a basic x86 operating system written in Assembly. This project is des
 -  Boot message display
 -  BIOS interrupt handling
 -  Kernel initialization (in progress)
--  VGA text mode driver (planned)
+-  VGA text mode driver✓ implemented)
+-  -   Memory management module (optimized for 128MB RAM or less)
+   -   -   Low RAM optimization and detection
 -  Keyboard driver (planned)
 
 ## Project Structure
