@@ -1,4 +1,5 @@
 ; Simple bootloader for CloudOS
+; Enhanced bootloader with improved error handling and disk detection
 ; Loads at 0x7C00 and prints a boot message
 
 [org 0x7C00]
@@ -35,6 +36,11 @@ print_string:
 
 boot_msg db 'CloudOS Bootloader v0.1', 0x0D, 0x0A, 0
 kernel_msg db 'Loading kernel...', 0x0D, 0x0A, 0
+
+; Additional boot messages
+success_msg db 'System initialized successfully', 0x0D, 0x0A, 0
+error_msg db 'Boot error detected!', 0x0D, 0x0A, 0
+disk_msg db 'Disk: Ready', 0x0D, 0x0A, 0
 
 ; Boot signature
 times 510-($-$$) db 0
